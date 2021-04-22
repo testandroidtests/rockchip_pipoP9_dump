@@ -238,7 +238,7 @@
   <project groups="pdk" name="platform/external/zlib" path="external/zlib" remote="rk" revision="fd823e4e038ee6a1d6698d17d14f2057e97acc12" upstream="rk30/mid/4.4_r1.1/develop"/>
   <project name="platform/external/zxing" path="external/zxing" revision="7620644768ffc235607b3a94671e49518c18686f" upstream="refs/tags/android-4.4.2_r1"/>
   <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" remote="rk" revision="8d5d0d7acae0e0dca56939c5e53932f94d8ee52b" upstream="rk32/mid/4.4_r1/develop"/>
-  <project name="platform/frameworks/base" path="frameworks/base" remote="rk" revision="971a2fdb4035a8d05fde2f33ce7441c235a11717" upstream="rk30/mid/4.4_r1/develop"/>
+  <project name="platform/frameworks/base" path="frameworks/base" remote="rk" revision="c5580deb0d25ac252a05344c24fa83c67dd3dd4e" upstream="rk30/mid/4.4_r1/develop"/>
   <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="9acb348aa83c53fe37be7be4437514e181334083" upstream="refs/tags/android-4.4.2_r1"/>
   <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="89a5648fcb366adb25b75aa69a7ad9a34842dd17" upstream="refs/tags/android-4.4.2_r1"/>
   <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="80706836b18127b5733d790613a5d1b9f97cbb1d" upstream="refs/tags/android-4.4.2_r1"/>
@@ -312,7 +312,7 @@
   <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI" revision="d7effd30eca546cabb5f1d70858b4038fa4a31c3" upstream="refs/tags/android-4.4.2_r1"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="ae2704a8c9611ef3ad0c348a41074a2ef21812fa" upstream="refs/tags/android-4.4.2_r1"/>
   <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" remote="rk" revision="d67f707827a229aac517ad2af962e7b1d7f3ab77" upstream="rk30/mid/4.4_r1/develop"/>
-  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" remote="rk" revision="e76f74207fb08f6a5eef212cd40a58778410cb31" upstream="rk30/mid/4.4_r1/develop"/>
+  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" remote="rk" revision="4051626ff09b76ff4fc8d0030667066f4022f8f9" upstream="rk30/mid/4.4_r1/develop"/>
   <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="b818e8e15a8a0d1ad1f04f01797974de138b59d1" upstream="refs/tags/android-4.4.2_r1"/>
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms" remote="rk" revision="98caa684838ec91760d5afcdbfb56bcd1d9df1df" upstream="rk30/mid/4.4.2_r1/develop"/>
   <project name="platform/packages/apps/Music" path="packages/apps/Music" remote="rk" revision="f0db95c7bb2f861be919dbed22309726819fe5b9" upstream="rk30/mid/4.4_r1/develop"/>
@@ -325,7 +325,7 @@
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="e953b2f84febfbc415951e83ecff40d265deab81" upstream="refs/tags/android-4.4.2_r1"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" remote="rk" revision="cab6b6107503e5e25db48c99ff761a2373f42c5b" upstream="rk30/mid/4.4_r1/develop"/>
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="b9f6019f400799c51c526af5293cf334d778fa3d" upstream="refs/tags/android-4.4.2_r1"/>
-  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" remote="rk" revision="aa016be0ea5f8d80af3e42b1cdd74e0225e5b027" upstream="rk30/mid/4.4_r1/develop"/>
+  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" remote="rk" revision="bda5faf78044979434561c2db68d39bd142981e8" upstream="rk30/mid/4.4_r1/develop"/>
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/tags/android-4.4.2_r1"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" remote="rk" revision="8b6d5cadd48513b826b7b93584e0fe8f1d2fde86" upstream="rk30/mid/4.4_r1/develop"/>
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="refs/tags/android-4.4.2_r1"/>
@@ -429,7 +429,7 @@
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
   </project>
   <project name="rk/hardware/rk29/audio" path="hardware/rk29/audio" remote="rk" revision="9519caa355c8fe44dddec9683571daf86751c3d6" upstream="rk30/mid/4.4_r1/develop"/>
-  <project name="rk/hardware/rk29/camera" path="hardware/rk29/camera" remote="rk" revision="7283bddac6f21ac287c4e5c97e9b5a5ea70a58af" upstream="rk32/mid/4.4_r1/develop"/>
+  <project name="rk/hardware/rk29/camera" path="hardware/rk29/camera" remote="rk" revision="040bbe49ffff4f5ad64355e3af61b4760643954a" upstream="rk32/mid/4.4_r1/develop"/>
   <project name="rk/hardware/rk29/gps" path="hardware/rk29/gps" remote="rk" revision="a2a4b19a1e2fd8a4735c6d7dd36dd30b1cc4e001" upstream="rk29/phone/4.0.1_r1/develop"/>
   <project name="rk/hardware/rk29/hwcomposer_rga" path="hardware/rk29/hwcomposer_rga" remote="rk" revision="bba21a4814a620083b72ca06202ce818efe9e325" upstream="rk32/mid/4.4_r1/develop"/>
   <project name="rk/hardware/rk29/jpeghw" path="hardware/rk29/jpeghw" remote="rk" revision="0c47b7c12c4ff2e4eb7d5b63292aa9fb662ca295" upstream="rk29/mid/4.0.1_r1/develop"/>

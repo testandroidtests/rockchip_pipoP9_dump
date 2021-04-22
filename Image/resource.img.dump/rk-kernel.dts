@@ -4416,15 +4416,15 @@
 					regulator-always-on;
 					regulator-boot-on;
 					regulator-name = "vccio_sd";
-					regulator-min-microvolt = < 0x2dc6c0 >;
-					regulator-max-microvolt = < 0x2dc6c0 >;
+					regulator-min-microvolt = < 0x325aa0 >;
+					regulator-max-microvolt = < 0x325aa0 >;
 					regulator-initial-state = < 0x03 >;
 					linux,phandle = < 0x7f >;
 					phandle = < 0x7f >;
 
 					regulator-state-mem {
 						regulator-state-enabled;
-						regulator-state-uv = < 0x2dc6c0 >;
+						regulator-state-uv = < 0x325aa0 >;
 					};
 				};
 
@@ -4482,13 +4482,13 @@
 					regulator-always-on;
 					regulator-boot-on;
 					regulator-name = "ricoh619_ldo8";
-					regulator-min-microvolt = < 0x2dc6c0 >;
-					regulator-max-microvolt = < 0x2dc6c0 >;
+					regulator-min-microvolt = < 0x325aa0 >;
+					regulator-max-microvolt = < 0x325aa0 >;
 					regulator-initial-state = < 0x03 >;
 
 					regulator-state-mem {
 						regulator-state-enabled;
-						regulator-state-uv = < 0x2dc6c0 >;
+						regulator-state-uv = < 0x325aa0 >;
 					};
 				};
 
