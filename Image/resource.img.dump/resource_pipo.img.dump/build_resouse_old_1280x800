@@ -1,0 +1,2 @@
+cp ../../../../kernel_old_1280x800/kernel_old/arch/arm/boot/dts/rk3288-p977_619.dtb  ./
+find . -type f|xargs ../resource_tool 

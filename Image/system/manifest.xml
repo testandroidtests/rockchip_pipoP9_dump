@@ -428,7 +428,7 @@
     <copyfile dest=".classpath" src=".classpath"/>
     <copyfile dest="mkimage.sh" src="mkimage.sh"/>
   </project>
-  <project name="rk/hardware/rk29/audio" path="hardware/rk29/audio" remote="rk" revision="c5257bcdb7a82dbaeb3d0c5063d94f21c4d5eada" upstream="rk30/mid/4.4_r1/develop"/>
+  <project name="rk/hardware/rk29/audio" path="hardware/rk29/audio" remote="rk" revision="9519caa355c8fe44dddec9683571daf86751c3d6" upstream="rk30/mid/4.4_r1/develop"/>
   <project name="rk/hardware/rk29/camera" path="hardware/rk29/camera" remote="rk" revision="7283bddac6f21ac287c4e5c97e9b5a5ea70a58af" upstream="rk32/mid/4.4_r1/develop"/>
   <project name="rk/hardware/rk29/gps" path="hardware/rk29/gps" remote="rk" revision="a2a4b19a1e2fd8a4735c6d7dd36dd30b1cc4e001" upstream="rk29/phone/4.0.1_r1/develop"/>
   <project name="rk/hardware/rk29/hwcomposer_rga" path="hardware/rk29/hwcomposer_rga" remote="rk" revision="bba21a4814a620083b72ca06202ce818efe9e325" upstream="rk32/mid/4.4_r1/develop"/>

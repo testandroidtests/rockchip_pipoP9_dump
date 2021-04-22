@@ -4208,8 +4208,6 @@
 					regulator-name = "vdd_gpu";
 					regulator-min-microvolt = < 0xadf34 >;
 					regulator-max-microvolt = < 0x16e360 >;
-					regulator-always-on;
-					regulator-boot-on;
 					regulator-initial-mode = < 0x02 >;
 					regulator-initial-state = < 0x03 >;
 
@@ -4257,7 +4255,7 @@
 				ricoh,ch-ichg = < 0xff >;
 				ricoh,ch-ilim-adp = < 0xff >;
 				ricoh,ch-ilim-usb = < 0xff >;
-				ricoh,ch-icchg = < 0x03 >;
+				ricoh,ch-icchg = < 0x00 >;
 				ricoh,fg-target-vsys = < 0xc80 >;
 				ricoh,fg-target-ibat = < 0x3e8 >;
 				ricoh,fg-poff-vbat = < 0x00 >;
@@ -4314,7 +4312,6 @@
 				regulator@2 {
 					reg = < 0x02 >;
 					regulator-compatible = "ricoh619_dc3";
-					regulator-always-on;
 					regulator-boot-on;
 					regulator-name = "vcc_lcd";
 					regulator-min-microvolt = < 0x325aa0 >;
@@ -4673,12 +4670,13 @@
 		rockchip,check-idle = < 0x01 >;
 		status = "okay";
 
-		sensor@10 {
-			compatible = "us5151";
+		cm3232@10 {
+			compatible = "light_cm3232";
 			reg = < 0x10 >;
 			type = < 0x05 >;
 			irq_enable = < 0x00 >;
-			poll_delay_ms = < 0x1f4 >;
+			poll_delay_ms = < 0x1e >;
+			layout = < 0x01 >;
 		};
 
 		ts@01 {
@@ -4977,8 +4975,6 @@
 	};
 
 	dvfs {
-		temp-limit-enable = < 0x01 >;
-		target-temp = < 0x50 >;
 
 		vd_arm {
 			regulator_name = "vdd_arm";
@@ -4988,12 +4984,16 @@
 
 				clk_core {
 					operating-points = < 0x1ec30 0xdbba0 0x34bc0 0xdbba0 0x4c2c0 0xdbba0 0x639c0 0xdbba0 0x927c0 0xdbba0 0xa9ec0 0xe7ef0 0xc7380 0xf4240 0xf6180 0x100590 0x124f80 0x10c8e0 0x159b40 0x124f80 0x171240 0x13d620 0x188940 0x149970 0x1a0040 0x149970 0x1b7740 0x149970 >;
-					temp-channel = < 0x01 >;
+					channel = < 0x00 >;
+					temp-limit-enable = < 0x01 >;
+					target-temp = < 0x50 >;
 					normal-temp-limit = < 0x03 0x17700 0x06 0x23280 0x09 0x2ee00 0x0f 0x5dc00 >;
-					performance-temp-limit = < 0x6e 0xc7380 >;
+					performance-temp-limit = < 0x5a 0xc7380 >;
 					status = "okay";
 					regu-mode-table = < 0xf6180 0x04 0x00 0x03 >;
 					regu-mode-en = < 0x00 >;
+					support-pvtm = < 0x01 >;
+					pvtm-operating-points = < 0x1ec30 0xdbba0 0x61a8 0x34bc0 0xdbba0 0x61a8 0x4c2c0 0xdbba0 0x61a8 0x639c0 0xdbba0 0x61a8 0x927c0 0xdbba0 0x61a8 0xa9ec0 0xe7ef0 0x61a8 0xc7380 0xf4240 0x61a8 0xf6180 0x100590 0x61a8 0x124f80 0x10c8e0 0x61a8 0x159b40 0x124f80 0x61a8 0x171240 0x13d620 0x61a8 0x188940 0x149970 0x61a8 >;
 				};
 			};
 		};
@@ -5006,6 +5006,7 @@
 
 				clk_ddr {
 					operating-points = < 0x30d40 0xf4240 0x493e0 0xf4240 0x61a80 0x10c8e0 0x6f540 0x10c8e0 >;
+					channel = < 0x02 >;
 					status = "okay";
 					freq-table = < 0x01 0x6f540 0x4000 0x6f540 0x02 0x30d40 >;
 					auto-freq-table = < 0x3a980 0x4f1a0 0x60ae0 0x80e80 >;
@@ -5030,6 +5031,7 @@
 
 				clk_gpu {
 					operating-points = < 0x186a0 0xdbba0 0x30d40 0xdbba0 0x493e0 0xe7ef0 0x668a0 0x118c30 0x7a120 0x124f80 >;
+					channel = < 0x01 >;
 					status = "okay";
 					regu-mode-table = < 0x30d40 0x04 0x00 0x03 >;
 					regu-mode-en = < 0x00 >;

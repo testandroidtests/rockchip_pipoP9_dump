@@ -36,7 +36,7 @@ on init
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
     
 on boot
-    setprop UserVolumeLabel "P9"
+setprop UserVolumeLabel "P9"
     setprop InternalSD_ROOT "/mnt/internal_sd"
     setprop ExternalSD_ROOT	"/mnt/external_sd"
     ifup lo
@@ -73,3 +73,5 @@ on property:service.adb.root=1
     write /sys/class/android_usb/android0/enable 0
     restart adbd
     write /sys/class/android_usb/android0/enable 1
+
+
